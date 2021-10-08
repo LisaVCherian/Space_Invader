@@ -9,6 +9,7 @@ It's a simple game made with Python using Pygame library.
 * The Spaseship can be moved to left or right using the _Left Arrow_ and _Right Arrow keys_
 * Bullets are shot using _Spacebar_
 * The game has classic sound effects and background music
+* The aliens keep on respawning without ever stopping
 * The game gets over when an alien reaches the spaceship
 
 
