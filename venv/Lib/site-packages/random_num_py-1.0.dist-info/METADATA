@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: random-num-py
+Version: 1.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+
+Generates a random number between 0 and the specified range
+
+
