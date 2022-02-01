@@ -12,11 +12,11 @@ It's a simple game made with Python using the Pygame library.
 * The aliens keep on respawning without ever stopping
 * The game gets over when an alien reaches the spaceship
 
-<h2>Screenshots of the Game</h2>
+<h2>Demo of the Game</h2>
 
-![Screenshot (310)](https://user-images.githubusercontent.com/75480734/152040867-fe7ba336-6675-4a6b-b807-7082dc8bc501.png)
 
-![Screenshot (313)](https://user-images.githubusercontent.com/75480734/152040892-b5e612a6-ee76-488a-a2cf-d62bad130609.png)
+https://user-images.githubusercontent.com/75480734/152041917-677c28b0-a70d-4eea-938b-614e1e0b2325.mp4
+
 
 <h2>Note</h2>
 
