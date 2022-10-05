@@ -8,6 +8,12 @@ pygame.init()
 # to create screen
 screen = pygame.display.set_mode((800, 600))
 
+
+#color
+black =(0,0,0)
+
+
+
 # title and icon
 pygame.display.set_caption("Space Invader")
 icon = pygame.image.load('ufo.png')
@@ -89,7 +95,33 @@ def game_over_text():
     over = over_font.render('GAME OVER!!!', True, (255, 255, 255))
     screen.blit(over, (200, 250))
 
+#paused
+def pause():
+    paused = True
+    while paused:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                quit()
+            if event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_c:
+                    paused = False
+                elif event.key == pygame.K_q:
+                    pygame.quit()
+                    quit()
+        screen.fill(black)
+        pause_font = pygame.font.Font('freesansbold.ttf', 45)
+        pause1 = pause_font.render('Game Over', True, (255, 255, 255))
+        screen.blit(pause1, (200, 150))
+        pause2 = pause_font.render('Press c to continue',True,(255,255,255))
+        screen.blit(pause2, (200, 200))
+        pause3 = pause_font.render('Press q to quit',True,(255,255,255))
+        screen.blit(pause3, (200, 250))
+        pygame.display.update()
 
+    
+    
+    
 # game loop
 running = True
 while running:
@@ -109,6 +141,8 @@ while running:
                 X_change = -5
             if event.key == pygame.K_RIGHT:
                 X_change = 5
+            if event.key == pygame.K_p:
+                pause()    
             if event.key == pygame.K_SPACE:
                 if bullet_state is 'ready':  # otherwise we can fire when already fired then X changes
                     bullet_sound = mixer.Sound('laser.wav')
